@@ -9,8 +9,7 @@ class Solution:
                 neg.append(nums[i])
             else:
                 pos.append(nums[i])
-        m=len(nums)//2
-        for j in range(m):
+        for j in range(len(pos)):
             ans.append(pos[j])
             ans.append(neg[j])
         return ans       
